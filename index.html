@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form>
+        <h1>Register</h1>
+        <div class="form-box">
+          <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="Enter username" />
+          <p class="error-text">error</p>
+        </div>
+        <div class="form-box">
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="Enter password" />
+          <p class="error-text">error</p>
+        </div>
+        <div class="form-box">
+          <label for="password2">Repeat password:</label>
+          <input type="password" id="password2" placeholder="Repeat password" />
+          <p class="error-text">error</p>
+        </div>
+        <div class="form-box">
+          <label for="email">E-Mail:</label>
+          <input type="email" id="email" placeholder="E-mail adress:" />
+          <p class="error-text">error</p>
+        </div>
+
+        <div class="control-buttons">
+          <button class="clear">Clear</button>
+          <button class="send">Send!</button>
+        </div>
+
+        <div class="popup">
+          <p>The form has been successfully sent!</p>
+          <button class="close">Close</button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
